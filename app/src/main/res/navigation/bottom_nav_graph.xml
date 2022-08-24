@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_nav_graph"
+    app:startDestination="@id/firstBottomNavFragment">
+
+    <fragment
+        android:id="@+id/firstBottomNavFragment"
+        android:name="com.harukey.nav.ui.bottomNav.screens.FirstBottomNavFragment"
+        android:label="FirstBottomNavFragment" />
+    <fragment
+        android:id="@+id/secondBottomNavFragment"
+        android:name="com.harukey.nav.ui.bottomNav.screens.SecondBottomNavFragment"
+        android:label="SecondBottomNavFragment" />
+    <fragment
+        android:id="@+id/thirdBottomNavFragment"
+        android:name="com.harukey.nav.ui.bottomNav.screens.ThirdBottomNavFragment"
+        android:label="ThirdBottomNavFragment" >
+        <action
+            android:id="@+id/action_thirdBottomNavFragment_to_testFragment"
+            app:destination="@id/testFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="com.harukey.nav.ui.exampleScreen.TestFragment"
+        android:label="TestFragment" />
+</navigation>
