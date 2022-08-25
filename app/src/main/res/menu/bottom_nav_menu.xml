@@ -10,7 +10,7 @@
         android:title="Second"
         android:icon="@drawable/ic_outline_lightbulb_24"/>
     <item
-        android:id="@+id/thirdBottomNavFragment"
+        android:id="@+id/thirdBottomNav"
         android:title="Third"
         android:icon="@drawable/ic_outline_mode_comment_24"/>
 </menu>
