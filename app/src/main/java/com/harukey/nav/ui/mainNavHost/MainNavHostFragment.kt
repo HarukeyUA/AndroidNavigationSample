@@ -28,9 +28,7 @@ class MainNavHostFragment : Fragment(R.layout.main_nav_host_fragment) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        if (savedInstanceState == null) {
-            initNavGraph()
-        }
+        initNavGraph()
         handleNavigation()
     }
 
